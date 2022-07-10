@@ -1,0 +1,37 @@
+package character_patterns;
+import java.util.Scanner;
+
+public class character_Saquare {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter the no of rows : ");
+		
+		Scanner s = new Scanner(System.in);
+		
+		int n=s.nextInt();
+		
+		System.out.println("Enter the starting character : ");
+		
+		String ab = s.next();
+		char a= ab.charAt(0);
+		
+		int m=(int)(a);
+		
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<=n;j++)
+			{
+				char ml= (char)(m);
+				System.out.print(ml);
+			}
+			System.out.println();
+			m++;
+			
+		}
+		
+		
+
+	}
+
+}
