@@ -1,0 +1,36 @@
+//ABCD
+//BCDE
+//CDEF
+//DEFG
+//
+package character_patterns;
+import java.util.Scanner;
+
+public class character_pattern1 {
+	public static void main(String[] args)
+	{
+		System.out.println("Enetr the no. of rows : ");
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		System.out.println("Enter the starting character : ");
+		String str= s.next();
+		char a=str.charAt(0);
+		
+		
+		int i=1;
+		while(i<=n)
+		{
+			char l= (char)(a+i-1);
+			int j=0;
+			while(j<=i)
+			{
+				 
+				 System.out.print(l);
+				 j++;
+				 l=(char)(l+1);
+			}
+			System.out.println();
+			i++;
+		}
+	}
+}
