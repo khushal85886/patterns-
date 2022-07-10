@@ -1,0 +1,31 @@
+package character_patterns;
+import java.util.Scanner;
+
+public class character_pattern2 {
+	public static void main(String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enyet the no. of rows : ");
+		int n = s.nextInt();
+		
+		System.out.println("Enter the starting character : ");
+		String str=s.next();
+		char a = str.charAt(0);
+		int i = 1;
+		
+		while(i<=n)
+		{
+			char l=  (char)(a+1-i);
+			int j= 1;
+			while(j<=i)
+			{
+				System.out.print(l);
+				l=(char)(l-1);
+				j++;
+			}
+			System.out.println();
+			i=i+1;
+		}
+		
+	}
+}
